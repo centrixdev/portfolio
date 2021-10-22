@@ -58,9 +58,9 @@ export default function Contact() {
                 message me otherwise:<br/>
                 <br/>
                 <a href="mailto:dominik.rsmn@gmail.com">email</a><br/>
-                <a href="http://twitter.com/ceentrix">twitter</a><br/>
-                <a href="http://instagram.com.com/ceentrix">instagram</a><br/>
-                <a href="http://facebook.com/ceentrix">facebook</a><br/>
+                <a href="http://twitter.com/dominikrsmn">twitter</a><br/>
+                <a href="http://instagram.com/dominik.rsmn">instagram</a><br/>
+                <a href="http://facebook.com/who-the-fuck-uses-facebook-lmao">facebook</a><br/>
                 <br/>
                 <br/>
                 */
