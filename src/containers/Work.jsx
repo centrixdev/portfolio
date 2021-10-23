@@ -37,13 +37,15 @@ export default function Work() {
                   >{' ->'}</span>
             </p>
 
-                <ScrollContainer 
+                <ScrollContainer
+                vertical={false} 
                 className="projects-container"
                 >
                     {projects.map(project => { 
                         return (
                         <Project 
                         id={project.id} 
+                        title={project.title}
                         image={project.image} 
                         description={project.description}
                         />

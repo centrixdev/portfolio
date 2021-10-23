@@ -1,34 +1,19 @@
+import Portfolio from './images/portfolio.webp'
+import Stratbook from './images/stratbook.webp'
+
 const projects = [
     {
     id: 0,
-    title: 'Test',
-    image: null,
-    description: 'This is a test project'
+    title: 'Portfolio',
+    image: Portfolio,
+    description: 'My Personal Portfolio'
     },
     {
     id: 1,
-    title: 'Test2',
-    image: null,
-    description: 'This is a test project 2'
+    title: 'Stratbook.GG',
+    image: Stratbook,
+    description: 'WIP'
     },
-    {
-    id: 2,
-    title: 'Test3',
-    image: null,
-    description: 'This is a test project 3'
-    },
-    {
-    id: 3,
-    title: 'Test3',
-    image: null,
-    description: 'This is a test project 4'
-    },
-    {
-    id: 4,
-    title: 'Test3',
-    image: null,
-    description: 'This is a test project 5'
-    }
 ]
 const skills = [
     {

@@ -17,11 +17,15 @@ export default function Project(props) {
             ease: Power3.easeOut
         })
     })
+
+
+    
     return (
         <li 
          key={props.id} 
          className="project"
-         ref={e => { project = e}}>
+         ref={e => { project = e}}
+    >
             <img src={props.image} alt={props.description} />
     </li>
     )
