@@ -1,38 +1,26 @@
-
-import { useEffect, useRef } from "react";
-import Contact from "./containers/Contact";
-import Hero from "./containers/Hero";
-import Skills from "./containers/Skills";
-import Work from "./containers/Work";
-
-import { gsap, Power3 } from "gsap";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Datenschutz from "./containers/Datenschutz";
+import Footer from "./containers/Footer";
+import Home from "./containers/Home";
+import Impressum from "./containers/Impressum";
 
 function App() {
 
-  var content = useRef(null)
-
-  useEffect(() => {
-    gsap.from(content, {
-      duration: 1,
-      opacity: 0,
-      delay: 3,
-      ease: Power3.easeOut
-    })
-  }, [])
-
   return (
-    <div className="App">
-      <Hero />
-      <div
-        ref={e => {content = e}}>
-        <Work />
-        <div className="container">
-          <Contact />
-          <Skills/>
-        </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/impressum" exact component={Impressum} />
+          <Route path="/datenschutz" exact component={Datenschutz} />
+          <Route path="/" component={Home}/>
+        </Switch>
+        <Footer />
       </div>
-
-    </div>
+    </Router>
   );
 }
 

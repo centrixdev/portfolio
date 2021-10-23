@@ -48,12 +48,24 @@ h1 {
   display: grid; 
   grid-auto-flow: column; 
   grid-auto-rows: 1fr; 
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
   grid-template-rows: 1fr; 
+  grid-auto-flow: column;
   gap: 0px 2px; 
   grid-template-areas: 
     "left right"; 
 }
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: block;
+  }
+  .contact,
+  .skills {
+    margin-bottom: 25px;
+  }
+}
+
 .contact {
   grid-area: left;
 }
@@ -182,4 +194,22 @@ a {
 }
 .command-name {
   color: var(--green)
+}
+footer {
+  position: fixed;
+  text-align: right;
+  right: 25px;
+  bottom: 25px;
+}
+.footer-text {
+  font-size: .875rem;
+  color: var(--gray);
+}
+
+@media only screen and (max-width: 1300px) {
+  footer {
+    margin-top: 50px;
+    position: initial;
+    text-align: left;
+  }
 }
