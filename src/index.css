@@ -11,6 +11,7 @@ body {
     --purple: #4F4FDC;
     --purple-dark: #40409B;
 
+    --green: #46D154;
     
     --error:rgb(220, 79, 79);
 
@@ -83,6 +84,7 @@ h1 {
   scroll-snap-type: x mandatory;
   display: flex;
   scrollbar-width: none;
+  
 
 }
 .projects-container::-webkit-scrollbar { display: none;}
@@ -165,4 +167,14 @@ a {
   font-size: 0.875rem !important;
   font-weight: lighter;
 
+}
+.command {
+  position: absolute;
+}
+
+.command-folder {
+  color: var(--purple);
+}
+.command-name {
+  color: var(--green)
 }

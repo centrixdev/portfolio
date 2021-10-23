@@ -1,12 +1,33 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from 'react'
+import React, { useRef, useEffect} from 'react'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
+import { gsap } from "gsap";
+import { TextPlugin } from 'gsap/TextPlugin';
 
+gsap.registerPlugin(TextPlugin)
 
 export default function Contact() {
+
+    var contact = useRef(null)
+
+    useEffect(() => {
+        gsap.from(contact, { 
+            duration: 1.5,
+            delay: 3,
+            text: { value: "// "}  
+            })
+        gsap.from(contact, { 
+            duration: .5,
+            delay: 3,
+            y: 10
+            })
+
+    }, [])
     return (
         <div className="contact">
-            <p className="comment">// contact me</p>
+            <p 
+              className="comment"
+              ref={e => {contact = e}}>// contact me</p>
             <div className="contact-container">
             
                 
